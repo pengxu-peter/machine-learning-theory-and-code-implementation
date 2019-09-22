@@ -1,4 +1,3 @@
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$
 
@@ -14,4 +13,12 @@ $\omega$
 
 $\Gamma$
 
-x^{a}\pm k\left \| bb \right \|
+
+
+ax^{2} + by^{2} + c = 0
+
+
+![](http://latex.codecogs.com/gif.latex?%5Csigma%3D%5Csqrt%7B%5Cfrac%7B1%7D%7Bn%7D%7B%5Csum_%7Bk%3D1%7D%5En%28x_i-%5Cbar%7Bx%7D%29%5E2%7D%7D)
+
+\sigma=\sqrt{\frac{1}{n}{\sum_{k=1}^n(x_i-\bar{x})^2}}
+
