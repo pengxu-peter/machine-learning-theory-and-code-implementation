@@ -73,10 +73,10 @@ gantt
 
 
 
-@startdot
+```dot
 digraph G {
     A->B;
     A->C;
 }
-@enddot
+```
 
