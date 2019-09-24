@@ -2,10 +2,29 @@ digraph G {
 rankdir=LR
 
 forcelabels=true;
-    A0 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">1</font></sub><sup><font point-size="8">[0]</font></sup>>];
-    B0 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">1</font></sub><sup><font point-size="8">[1]</font></sup>>];
-    B1 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">2</font></sub><sup><font point-size="8">[1]</font></sup>>];
+    X0 [label=<<font point-size="15"><i>x</i></font><sub><font point-size="8">0</font></sub><sup><font point-size="8">[0]</font></sup>>];
+    X1 [label=<<font point-size="15"><i>x</i></font><sub><font point-size="8">1</font></sub><sup><font point-size="8">[0]</font></sup>>];
 
-    A0->B0;
-    A0->B1;
+
+    A11 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">1</font></sub><sup><font point-size="8">[1]</font></sup>>];
+    A12 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">1</font></sub><sup><font point-size="8">[1]</font></sup>>];
+    A13 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">1</font></sub><sup><font point-size="8">[1]</font></sup>>];
+
+
+    A21 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">2</font></sub><sup><font point-size="8">[1]</font></sup>>];
+    A22 [label=<<font point-size="15"><i>a</i></font><sub><font point-size="8">2</font></sub><sup><font point-size="8">[1]</font></sup>>];
+
+    X0->A11;
+    X0->A12;
+    X0->A13;
+    X1->A11;
+    X1->A12;
+    X1->A13;
+
+    A11->A21;
+    A12->A21;
+    A13->A21;
+    A11->A22;
+    A12->A22;
+    A13->A22;
 }
