@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XPD:PROJECT xmlns:XPD="http://www.staruml.com" version="1">
+<XPD:HEADER>
+<XPD:SUBUNITS>
+</XPD:SUBUNITS>
+<XPD:PROFILES>
+<XPD:PROFILE>UMLStandard</XPD:PROFILE>
+</XPD:PROFILES>
+</XPD:HEADER>
+<XPD:BODY>
+<XPD:OBJ name="DocumentElement" type="UMLProject" guid="kq68/CPimEycPy5EEQSorwAA">
+<XPD:ATTR name="Title" type="string">Untitled</XPD:ATTR>
+<XPD:ATTR name="#OwnedElements" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLModel" guid="CuXX82Yc4kGe6B88JDkRSQAA">
+<XPD:ATTR name="Name" type="string">Use Case Model</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">useCaseModel</XPD:ATTR>
+<XPD:REF name="Namespace">kq68/CPimEycPy5EEQSorwAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLUseCaseDiagram" guid="o+mHTWLNzU2J4UCpwb6+qgAA">
+<XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
+<XPD:REF name="DiagramOwner">CuXX82Yc4kGe6B88JDkRSQAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLUseCaseDiagramView" guid="uKwUG05VAkqjEx6iu8JLyQAA">
+<XPD:REF name="Diagram">o+mHTWLNzU2J4UCpwb6+qgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLModel" guid="hzQo88aNJ0uZDAlPnQX/0QAA">
+<XPD:ATTR name="Name" type="string">Design Model</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">designModel</XPD:ATTR>
+<XPD:REF name="Namespace">kq68/CPimEycPy5EEQSorwAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLClassDiagram" guid="y+5PNHASBUS3Y5CVSRzZKQAA">
+<XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
+<XPD:ATTR name="DefaultDiagram" type="boolean">True</XPD:ATTR>
+<XPD:REF name="DiagramOwner">hzQo88aNJ0uZDAlPnQX/0QAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="PZ3sS27G3ES/pQg7mzrQ1AAA">
+<XPD:REF name="Diagram">y+5PNHASBUS3Y5CVSRzZKQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedElements" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLSubsystem" guid="UI4Kl6YEeUCmWlD1SMvtcAAA">
+<XPD:ATTR name="Name" type="string">SANQI</XPD:ATTR>
+<XPD:REF name="Namespace">hzQo88aNJ0uZDAlPnQX/0QAA</XPD:REF>
+<XPD:ATTR name="#OwnedElements" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLSubsystem" guid="q8GRn+5C3Uu8Du9w95Ok2wAA">
+<XPD:ATTR name="Name" type="string">COMM</XPD:ATTR>
+<XPD:REF name="Namespace">UI4Kl6YEeUCmWlD1SMvtcAAA</XPD:REF>
+<XPD:ATTR name="#OwnedElements" type="integer">5</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="MgtI+2kmJ0Cfwytp1RGBwQAA">
+<XPD:ATTR name="Name" type="string">FileIO</XPD:ATTR>
+<XPD:REF name="Namespace">q8GRn+5C3Uu8Du9w95Ok2wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLClass" guid="zZqDxb6MQ0a44u4JUp12lgAA">
+<XPD:ATTR name="Name" type="string">SanqiLogger</XPD:ATTR>
+<XPD:REF name="Namespace">q8GRn+5C3Uu8Du9w95Ok2wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[2]" type="UMLClass" guid="99l+cwUntkeBNILNbBT0gQAA">
+<XPD:ATTR name="Name" type="string">SanqiConfig</XPD:ATTR>
+<XPD:REF name="Namespace">q8GRn+5C3Uu8Du9w95Ok2wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[3]" type="UMLException" guid="NJHLK/JSwUK53EPQkAPqsgAA">
+<XPD:ATTR name="Name" type="string">SanqiException</XPD:ATTR>
+<XPD:REF name="Namespace">q8GRn+5C3Uu8Du9w95Ok2wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[4]" type="UMLEnumeration" guid="7AMmNp4IVkqcrrq8fMocWAAA">
+<XPD:ATTR name="Name" type="string">SanqiExceptionList</XPD:ATTR>
+<XPD:REF name="Namespace">q8GRn+5C3Uu8Du9w95Ok2wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLSubsystem" guid="USx7HjtnB0OpuR28cZpxIQAA">
+<XPD:ATTR name="Name" type="string">NN</XPD:ATTR>
+<XPD:REF name="Namespace">UI4Kl6YEeUCmWlD1SMvtcAAA</XPD:REF>
+<XPD:ATTR name="#OwnedElements" type="integer">5</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLPackage" guid="uskPJlKQkUSQmmIjTzDYdgAA">
+<XPD:ATTR name="Name" type="string">Operation</XPD:ATTR>
+<XPD:REF name="Namespace">USx7HjtnB0OpuR28cZpxIQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLPackage" guid="lY+2R4lEnEKDrIifX+2chgAA">
+<XPD:ATTR name="Name" type="string">Loss</XPD:ATTR>
+<XPD:REF name="Namespace">USx7HjtnB0OpuR28cZpxIQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[2]" type="UMLPackage" guid="qpMBYfP3kkSW2gDZdrDbbAAA">
+<XPD:ATTR name="Name" type="string">Optimization</XPD:ATTR>
+<XPD:REF name="Namespace">USx7HjtnB0OpuR28cZpxIQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[3]" type="UMLPackage" guid="f3wjBVEt1UuXwHgNxbczfgAA">
+<XPD:ATTR name="Name" type="string">Evaluation</XPD:ATTR>
+<XPD:REF name="Namespace">USx7HjtnB0OpuR28cZpxIQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[4]" type="UMLPackage" guid="eMXrYNpxdE2Rgjlvy1OKVgAA">
+<XPD:ATTR name="Name" type="string">DataSet</XPD:ATTR>
+<XPD:REF name="Namespace">USx7HjtnB0OpuR28cZpxIQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:BODY>
+</XPD:PROJECT>
