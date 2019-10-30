@@ -22,8 +22,7 @@ def sigmoid(z):
     return 1/(1+(np.e)**z)
 
 class Input():
-        def __init__(self,node_num,active_mode):
-        self.pre_layer = pre_layer
+    def __init__(self,node_num,active_mode):
         self.node_num = node_num
         self.active_mode = active_mode
         
@@ -35,9 +34,28 @@ class Input():
         self.post_layer = post_layer
     
 
+class Layer(object):
+    def __init__(self, **kwargs):
+        allowed_kwargs = {'input_shape',
+                          'batch_input_shape',
+                          'batch_size',
+                          'dtype',
+                          'name',
+                          'trainable',
+                          'weights',
+                          'input_dtype',  # legacy
+                          }
+        for kwarg in kwargs:
+            if kwarg not in allowed_kwargs:
+                raise TypeError('Keyword argument not understood:', kwarg)
+        name = kwargs.get('name')
+        if not name:
+            prefix = self.__class__.__name__
+            name = _to_snake_case(prefix) + '_' + str(K.get_uid(prefix))
+        self.name = name
 
-class Layer():
-    def __init__(self,pre_layer,node_num,active_mode):
+class Dense(Layer):
+    def __init__(self, filters, name):
         self.pre_layer = pre_layer
         self.node_num = node_num
         self.active_mode = active_mode
@@ -46,7 +64,7 @@ class Layer():
         self.pre_layer.set_post_layer(self)
         
         
-    def set_post_layer(self, post_layer):
+    def __call__(self, inputs, **kwargs):
         self.post_layer = post_layer
     
     
