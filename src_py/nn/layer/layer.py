@@ -35,37 +35,17 @@ class Input():
     
 
 class Layer(object):
-    def __init__(self, **kwargs):
-        allowed_kwargs = {'input_shape',
-                          'batch_input_shape',
-                          'batch_size',
-                          'dtype',
-                          'name',
-                          'trainable',
-                          'weights',
-                          'input_dtype',  # legacy
-                          }
-        for kwarg in kwargs:
-            if kwarg not in allowed_kwargs:
-                raise TypeError('Keyword argument not understood:', kwarg)
-        name = kwargs.get('name')
-        if not name:
-            prefix = self.__class__.__name__
-            name = _to_snake_case(prefix) + '_' + str(K.get_uid(prefix))
+    def __init__(self, name='default', trainable=True, weights=None):
         self.name = name
 
 class Dense(Layer):
-    def __init__(self, filters, name):
-        self.pre_layer = pre_layer
-        self.node_num = node_num
-        self.active_mode = active_mode
+    def __init__(self, filters, **kwargs):
+        self.filters = filters
         
+    def __call__(self, inputs, **kwargs):
         self.weight = np.random.rand(self.node_num,self.pre_layer.node_num)
         self.pre_layer.set_post_layer(self)
         
-        
-    def __call__(self, inputs, **kwargs):
-        self.post_layer = post_layer
     
     
     
