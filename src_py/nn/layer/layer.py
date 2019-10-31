@@ -22,16 +22,11 @@ def sigmoid(z):
     return 1/(1+(np.e)**z)
 
 class Input():
-    def __init__(self,node_num,active_mode):
-        self.node_num = node_num
-        self.active_mode = active_mode
-        
-        self.weight = np.random.rand(self.node_num,self.pre_layer.node_num)
-        self.pre_layer.set_post_layer(self)
-        
-        
-    def set_post_layer(self, post_layer):
-        self.post_layer = post_layer
+    def __init__(self,filters):
+        self.filters = filters
+
+    def set_post_layer(self, outputs):
+        self.post_layer = outputs
     
 
 class Layer(object):
@@ -43,10 +38,25 @@ class Dense(Layer):
         self.filters = filters
         
     def __call__(self, inputs, **kwargs):
-        self.weight = np.random.rand(self.node_num,self.pre_layer.node_num)
+        self.pre_layer = inputs
+        self.weight = np.random.rand(self.filters, self.pre_layer.filters)
         self.pre_layer.set_post_layer(self)
+
+    def set_post_layer(self, outputs):             
+        # used for get the relation of all layer
+        self.post_layer = outputs
         
-    
+class Model():
+    def __init__(self, input, output):
+        self.input = input
+        self.output = output
+        temp_layer = copy.deepcopy(input)
+        self.layer_list = []
+        while(temp_layer is not self.output):
+            temp_layer = copy.deepcopy(temp_layer.post_layer)
+            self.layer_list.append(temp_layer)
+
+
     
     
 
